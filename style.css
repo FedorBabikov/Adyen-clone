@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fakt, Helvetica, Arial, sans-serif;
+}
+
+header,
+.landing,
+.brends {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Header section                               */
+/* -------------------------------------------------------------------------- */
+header {
+  font-size: 15px;
+  height: 5vh;
+  margin: auto;
+  justify-content: flex-start;
+}
+
+.logo {
+  margin-right: 6px;
+}
+
+.logo img {
+  width: 80px;
+  height: 5vh;
+  object-position: center;
+  object-fit: cover;
+}
+
+.menu {
+  width: 50%;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0px 15px;
+}
+
+.menu li a,
+.login a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.login {
+  margin-left: 10px;
+}
+
+.menu li span {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+}
+.contact button {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #21bd58;
+  padding: 11px 20px;
+  margin-left: auto;
+  border-radius: 6px;
+  border: none;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Landing section                              */
+/* -------------------------------------------------------------------------- */
+.landing {
+  margin-top: 10px;
+}
+.cta {
+}
+.video {
+  width: 400px;
+  margin-left: auto;
+  object-fit: contain;
+}
