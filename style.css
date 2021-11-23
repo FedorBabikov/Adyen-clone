@@ -5,12 +5,32 @@
   font-family: Fakt, Helvetica, Arial, sans-serif;
 }
 
+body {
+  padding: 20px;
+}
+
 header,
 .landing,
 .brends {
-  width: 90%;
+  max-width: 1100px;
   margin: auto;
   display: flex;
+}
+
+.button {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #21bd58;
+  padding: 11px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #178e42;
 }
 /* -------------------------------------------------------------------------- */
 /*                               Header section                               */
@@ -45,6 +65,10 @@ header {
   margin: 0px 15px;
 }
 
+.menu li:hover {
+  border-top: 2px solid #21bd58;
+}
+
 .menu li a,
 .login a {
   text-decoration: none;
@@ -68,26 +92,64 @@ header {
   width: 20%;
 }
 .contact button {
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  background-color: #21bd58;
-  padding: 11px 20px;
   margin-left: auto;
-  border-radius: 6px;
-  border: none;
 }
 /* -------------------------------------------------------------------------- */
 /*                               Landing section                              */
 /* -------------------------------------------------------------------------- */
 .landing {
   margin-top: 10px;
+  align-items: center;
 }
+
 .cta {
+  width: 500px;
 }
+
+.cta h1 {
+  font-size: 52px;
+  margin-bottom: 18px;
+}
+
+.cta p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 .video {
   width: 400px;
   margin-left: auto;
   object-fit: contain;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Brends section                               */
+/* -------------------------------------------------------------------------- */
+.brends {
+  margin: 25px 0px;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Values section                               */
+/* -------------------------------------------------------------------------- */
+.values {
+  width: 100vw;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f6f9;
+}
+
+.values > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 70px 10px;
+  line-height: 1.6;
+}
+
+.values img {
+  width: 40px;
+  height: 40px;
 }
