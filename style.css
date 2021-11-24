@@ -1,20 +1,33 @@
+/* -------------------------------------------------------------------------- */
+/*                              General settings                              */
+/* -------------------------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Fakt, Helvetica, Arial, sans-serif;
-}
-
-body {
-  padding: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 header,
 .landing,
-.brends {
+.brends,
+.foot-wrap {
   max-width: 1100px;
   margin: auto;
   display: flex;
+  padding: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+a {
+  font-size: 13px;
 }
 
 .button {
@@ -32,9 +45,11 @@ header,
 .button:hover {
   background-color: #178e42;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                               Header section                               */
 /* -------------------------------------------------------------------------- */
+
 header {
   font-size: 15px;
   height: 5vh;
@@ -70,7 +85,8 @@ header {
 }
 
 .menu li a,
-.login a {
+.login a,
+.val-link a {
   text-decoration: none;
   letter-spacing: 1px;
   color: black;
@@ -94,9 +110,11 @@ header {
 .contact button {
   margin-left: auto;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                               Landing section                              */
 /* -------------------------------------------------------------------------- */
+
 .landing {
   margin-top: 10px;
   align-items: center;
@@ -111,25 +129,24 @@ header {
   margin-bottom: 18px;
 }
 
-.cta p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
 .video {
   width: 400px;
   margin-left: auto;
   object-fit: contain;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                               Brends section                               */
 /* -------------------------------------------------------------------------- */
+
 .brends {
-  margin: 25px 0px;
+  padding: 25px 0px;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                               Values section                               */
 /* -------------------------------------------------------------------------- */
+
 .values {
   width: 100vw;
   padding: 20px 0px;
@@ -146,10 +163,57 @@ header {
   align-items: center;
   width: 25%;
   padding: 70px 10px;
-  line-height: 1.6;
+  text-align: center;
 }
 
 .values img {
   width: 40px;
   height: 40px;
 }
+
+.values h2 {
+  margin: 20px 0px;
+  font-size: 28px;
+}
+
+.val-link {
+  margin-top: 20px;
+}
+
+.val-link a {
+  color: #21bd58;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  width: 100vw;
+  background-color: #01122b;
+}
+
+.foot-wrap {
+  display: flex;
+  border-bottom: 1px solid #384760;
+}
+
+.foot-nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.foot-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 0px;
+}
+
+.foot-nav a:first-of-type {
+  font-weight: 900;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Responsive                                 */
+/* -------------------------------------------------------------------------- */
