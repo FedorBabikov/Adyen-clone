@@ -12,7 +12,7 @@
 header,
 .landing,
 .brands,
-.values,
+.values-wrap,
 .foot-wrap {
   max-width: 1100px;
   margin: auto;
@@ -160,12 +160,16 @@ header {
 /* -------------------------------------------------------------------------- */
 
 .values {
-  justify-content: space-evenly;
-  align-items: flex-start;
+  width: 100vw;
   background-color: #f3f6f9;
 }
 
-.values > div {
+.values-wrap {
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.values-wrap > div {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -175,12 +179,12 @@ header {
   text-align: center;
 }
 
-.values img {
+.values-wrap img {
   width: 40px;
   height: 40px;
 }
 
-.values h2 {
+.values-wrap h2 {
   margin: 20px 0px;
   font-size: 28px;
 }
@@ -203,7 +207,6 @@ footer {
 }
 
 .foot-wrap {
-  display: flex;
   justify-content: center;
 }
 
@@ -227,7 +230,7 @@ footer {
 /*                                 Responsive                                 */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   header {
     width: 400px;
   }
@@ -253,11 +256,11 @@ footer {
     font-size: 28px;
     margin-bottom: 10px;
   }
-  .values {
+  .values-wrap {
     flex-direction: column;
     align-items: center;
   }
-  .values div {
+  .values-wrap div {
     padding: 5px;
   }
   p {
@@ -265,9 +268,26 @@ footer {
     margin: 5px 0px;
     line-height: 1;
   }
+  .brands {
+    padding: 10px 0px;
+  }
+  .menu,
+  .contact {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+  .burger div {
+    width: 25px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: black;
+  }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .brands {
     padding: 10px 0px;
   }
