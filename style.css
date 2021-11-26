@@ -11,7 +11,8 @@
 
 header,
 .landing,
-.brends,
+.brands,
+.values,
 .foot-wrap {
   max-width: 1100px;
   margin: auto;
@@ -107,6 +108,7 @@ header {
   justify-content: space-around;
   width: 20%;
 }
+
 .contact button {
   margin-left: auto;
 }
@@ -141,15 +143,15 @@ header {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               Brends section                               */
+/*                               Brands section                               */
 /* -------------------------------------------------------------------------- */
 
-.brends {
+.brands {
   justify-content: center;
   padding: 25px 0px;
 }
 
-.brends img {
+.brands img {
   width: 15%;
 }
 
@@ -158,9 +160,6 @@ header {
 /* -------------------------------------------------------------------------- */
 
 .values {
-  width: 100vw;
-  padding: 20px 0px;
-  display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   background-color: #f3f6f9;
@@ -228,27 +227,7 @@ footer {
 /*                                 Responsive                                 */
 /* -------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1024px) {
-  .brends {
-    padding: 10px 0px;
-  }
-  .menu,
-  .contact {
-    display: none;
-  }
-  .burger {
-    display: block;
-    margin-left: auto;
-  }
-  .burger div {
-    width: 25px;
-    height: 2px;
-    margin: 4px 0;
-    background-color: black;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   header {
     width: 400px;
   }
@@ -285,5 +264,25 @@ footer {
     font-size: 15px;
     margin: 5px 0px;
     line-height: 1;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .brands {
+    padding: 10px 0px;
+  }
+  .menu,
+  .contact {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+  .burger div {
+    width: 25px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: black;
   }
 }
