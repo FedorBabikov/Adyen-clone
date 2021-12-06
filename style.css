@@ -185,6 +185,10 @@ header {
   height: 40px;
 }
 
+.partnership img {
+  object-position: center -9px;
+}
+
 .values-wrap h2 {
   margin: 20px 0px;
   font-size: 28px;
